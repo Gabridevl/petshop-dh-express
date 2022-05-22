@@ -1,3 +1,4 @@
+const db = require("../db.json");
 const homeController = {
   cadastro: (req, res) => {
     res.render("home/cadastro");
@@ -17,7 +18,7 @@ const homeController = {
       preco: "R$ 50,00",
       descricao: "lorem ipum dolor sit",
     };
-    res.render("home/servicos", {servico: servico, title: 'Petshop da dh'});
+    res.render("home/servicos", { servico: servico, title: "Petshop da dh" });
   },
   sobre: (req, res) => {
     res.render("home/sobre");
